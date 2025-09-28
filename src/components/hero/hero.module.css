@@ -1,0 +1,373 @@
+/* src/components/Hero/Hero.css */
+.hero {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	position: relative;
+	overflow: hidden;
+	padding-top: 70px; /* Account for fixed navbar */
+}
+
+.hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: radialGradient(
+			circle at 20% 80%,
+			rgba(120, 119, 198, 0.3) 0%,
+			transparent 50%
+		),
+		radialGradient(
+			circle at 80% 20%,
+			rgba(255, 119, 198, 0.3) 0%,
+			transparent 50%
+		),
+		radialGradient(
+			circle at 40% 40%,
+			rgba(120, 219, 255, 0.3) 0%,
+			transparent 50%
+		);
+	z-index: 1;
+}
+
+.heroContainer {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 var(--spacing-md);
+	position: relative;
+	z-index: 2;
+}
+
+.heroContent {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--spacing-3xl);
+	align-items: center;
+	margin-bottom: var(--spacing-3xl);
+}
+
+.heroText {
+	color: white;
+}
+
+.heroName {
+	font-size: 3.5rem;
+	font-weight: 800;
+	margin-bottom: var(--spacing-lg);
+	line-height: 1.1;
+}
+
+.textGradient {
+	background: linear-gradient(45deg, #ffd89b 0%, #19547b 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.heroTitle {
+	font-size: 2rem;
+	margin-bottom: var(--spacing-xl);
+	font-weight: 600;
+}
+
+.typewriter {
+	color: #ffd89b;
+	font-weight: 700;
+}
+
+.cursor {
+	color: #ffd89b;
+	animation: blink 1s infinite;
+	font-weight: 100;
+}
+
+@keyframes blink {
+	0%,
+	50% {
+		opacity: 1;
+	}
+	51%,
+	100% {
+		opacity: 0;
+	}
+}
+
+.heroDescription {
+	font-size: 1.2rem;
+	line-height: 1.6;
+	margin-bottom: var(--spacing-2xl);
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.heroButtons {
+	display: flex;
+	gap: var(--spacing-lg);
+	flex-wrap: wrap;
+}
+
+.heroButtons .Btn {
+	font-size: 1.1rem;
+	padding: var(--spacing-md) var(--spacing-xl);
+	border-radius: 50px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.heroButtons .btnPrimary {
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(10px);
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	color: white;
+}
+
+.heroButtons .btnPrimary:hover {
+	background: rgba(255, 255, 255, 0.3);
+	transform: translateY(-2px);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.heroButtons .btnSecondary {
+	background: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	color: white;
+}
+
+.heroButtons .btnSecondary:hover {
+	background: rgba(255, 255, 255, 0.1);
+	border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Hero Visual */
+.heroVisual {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.heroImage {
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+
+.imagePlaceholder {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.1) 0%,
+		rgba(255, 255, 255, 0.05) 100%
+	);
+	backdrop-filter: blur(10px);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	position: relative;
+	overflow: hidden;
+}
+
+.imagePlaceholder::before {
+	content: "";
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background: linear-gradient(
+		45deg,
+		transparent,
+		rgba(255, 255, 255, 0.1),
+		transparent
+	);
+	animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+	0% {
+		transform: translateX(-100%) translateY(-100%) rotate(45deg);
+	}
+	100% {
+		transform: translateX(100%) translateY(100%) rotate(45deg);
+	}
+}
+
+.codeIcon {
+	font-size: 4rem;
+	font-weight: bold;
+	color: #ffd89b;
+	z-index: 1;
+}
+
+/* Floating Elements */
+.floatingElements {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.floatingElement {
+	position: absolute;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	padding: var(--spacing-sm) var(--spacing-md);
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 500;
+	animation: float 6s ease-in-out infinite;
+}
+
+.floatingElement.react {
+	top: 20%;
+	right: -20%;
+	animation-delay: 0s;
+}
+
+.floatingElement.ts {
+	bottom: 30%;
+	left: -25%;
+	animation-delay: 2s;
+}
+
+.floatingElement.node {
+	top: 60%;
+	right: -15%;
+	animation-delay: 4s;
+}
+
+@keyframes float {
+	0%,
+	100% {
+		transform: translateY(0px) rotate(0deg);
+	}
+	25% {
+		transform: translateY(-20px) rotate(2deg);
+	}
+	50% {
+		transform: translateY(-10px) rotate(-2deg);
+	}
+	75% {
+		transform: translateY(-15px) rotate(1deg);
+	}
+}
+
+/* Scroll Indicator */
+.heroScrollIndicator {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--spacing-sm);
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+.scrollArrow {
+	width: 24px;
+	height: 40px;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	position: relative;
+}
+
+.arrowDown {
+	position: absolute;
+	top: 8px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 4px;
+	height: 4px;
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 50%;
+	animation: scroll-down 2s infinite;
+}
+
+@keyframes scroll-down {
+	0% {
+		top: 8px;
+		opacity: 1;
+	}
+	100% {
+		top: 24px;
+		opacity: 0;
+	}
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+	.heroContent {
+		grid-template-columns: 1fr;
+		text-align: center;
+		gap: var(--spacing-2xl);
+	}
+
+	.heroVisual {
+		order: -1;
+	}
+
+	.heroImage {
+		width: 250px;
+		height: 250px;
+	}
+
+	.floatingElement {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		min-height: 90vh;
+	}
+
+	.heroName {
+		font-size: 2.5rem;
+	}
+
+	.heroTitle {
+		font-size: 1.5rem;
+	}
+
+	.heroDescription {
+		font-size: 1.1rem;
+	}
+
+	.heroButtons {
+		justify-content: center;
+	}
+
+	.heroButtons .btn {
+		font-size: 1rem;
+		padding: var(--spacing-sm) var(--spacing-lg);
+	}
+
+	.heroImage {
+		width: 200px;
+		height: 200px;
+	}
+
+	.codeIcon {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.heroButtons {
+		flex-direction: column;
+	}
+
+	.heroButtons .btn {
+		width: 100%;
+	}
+}
