@@ -1,27 +1,5 @@
-export const personalInfo = {
-	name: "Alex Rodrigues do Nascimento",
-	title: "Software Developer",
-	bio: "Tech enthusiast with a passion for coding and problem-solving.",
-	social: {
-		github: "https://github.com/alex2534",
-		linkedin: "linkedin.com/in/alex-r-nascimento-b321101a8",
-		email: "alex2534@outlook.com",
-	},
-};
-
-export const projects = [
-	{
-		id: 1,
-		title: "Project One",
-		description: "A description of your first project. Technologies used.",
-		techStack: ["React", "TypeScript", "Tailwind CSS"],
-		githubUrl: "https://github.com/alex2534/my-portfolio",
-		liveUrl: "https://project-one.vercel.app",
-	},
-	// All add more projects here a i build them out as needed
-];
 // src/data/portfolioData.ts
-export interface PersonalInfo1 {
+export interface PersonalInfo {
 	name: string;
 	title: string;
 	email: string;
@@ -37,7 +15,7 @@ export interface PersonalInfo1 {
 	};
 }
 
-export interface Project1 {
+export interface Project {
 	id: number;
 	title: string;
 	description: string;
@@ -65,23 +43,23 @@ export interface Experience {
 	type: "work" | "education";
 }
 
-export const personalInfo1: PersonalInfo1 = {
-	name: "Your Name",
+export const personalInfo: PersonalInfo = {
+	name: "Alex Nascimento",
 	title: "Full Stack Developer",
-	email: "your.email@example.com",
-	phone: "+1 (555) 123-4567",
-	location: "Your City, Country",
+	email: "alex2534@outlook.com",
+	phone: "+1 (62) 99130-4986 ",
+	location: "Goiania, Brazil",
 	bio: "Passionate full-stack developer with expertise in modern web technologies. I love creating efficient, scalable applications that solve real-world problems and deliver exceptional user experiences.",
 	resume: "/resume.pdf",
 	socialLinks: {
-		github: "https://github.com/yourusername",
-		linkedin: "https://linkedin.com/in/yourusername",
+		github: "https://github.com/alex2534",
+		linkedin: "https://www.linkedin.com/in/alex-r-nascimento-b321101a8/",
 		twitter: "https://twitter.com/yourusername",
 		portfolio: "https://yourportfolio.com",
 	},
 };
 
-export const projects1: Project1[] = [
+export const projects: Project[] = [
 	{
 		id: 1,
 		title: "E-commerce Platform",
@@ -167,8 +145,8 @@ export const skills: Skill[] = [
 export const experiences: Experience[] = [
 	{
 		id: 1,
-		title: "Senior Frontend Developer",
-		company: "Tech Solutions Inc.",
+		title: "Junior Frontend Developer",
+		company: "CBCO .",
 		duration: "2022 - Present",
 		description: [
 			"Led development of customer-facing web applications serving 10K+ users",

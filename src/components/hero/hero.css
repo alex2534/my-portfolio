@@ -16,17 +16,17 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: radialGradient(
+	background: radial-gradient(
 			circle at 20% 80%,
 			rgba(120, 119, 198, 0.3) 0%,
 			transparent 50%
 		),
-		radialGradient(
+		radial-gradient(
 			circle at 80% 20%,
 			rgba(255, 119, 198, 0.3) 0%,
 			transparent 50%
 		),
-		radialGradient(
+		radial-gradient(
 			circle at 40% 40%,
 			rgba(120, 219, 255, 0.3) 0%,
 			transparent 50%
@@ -34,7 +34,7 @@
 	z-index: 1;
 }
 
-.heroContainer {
+.hero-container {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 var(--spacing-md);
@@ -42,7 +42,7 @@
 	z-index: 2;
 }
 
-.heroContent {
+.hero-content {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: var(--spacing-3xl);
@@ -50,25 +50,25 @@
 	margin-bottom: var(--spacing-3xl);
 }
 
-.heroText {
+.hero-text {
 	color: white;
 }
 
-.heroName {
+.hero-name {
 	font-size: 3.5rem;
 	font-weight: 800;
 	margin-bottom: var(--spacing-lg);
 	line-height: 1.1;
 }
 
-.textGradient {
+.text-gradient {
 	background: linear-gradient(45deg, #ffd89b 0%, #19547b 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 }
 
-.heroTitle {
+.hero-title {
 	font-size: 2rem;
 	margin-bottom: var(--spacing-xl);
 	font-weight: 600;
@@ -96,20 +96,20 @@
 	}
 }
 
-.heroDescription {
+.hero-description {
 	font-size: 1.2rem;
 	line-height: 1.6;
 	margin-bottom: var(--spacing-2xl);
 	color: rgba(255, 255, 255, 0.9);
 }
 
-.heroButtons {
+.hero-buttons {
 	display: flex;
 	gap: var(--spacing-lg);
 	flex-wrap: wrap;
 }
 
-.heroButtons .Btn {
+.hero-buttons .btn {
 	font-size: 1.1rem;
 	padding: var(--spacing-md) var(--spacing-xl);
 	border-radius: 50px;
@@ -117,45 +117,45 @@
 	transition: all 0.3s ease;
 }
 
-.heroButtons .btnPrimary {
+.hero-buttons .btn-primary {
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(10px);
 	border: 2px solid rgba(255, 255, 255, 0.3);
 	color: white;
 }
 
-.heroButtons .btnPrimary:hover {
+.hero-buttons .btn-primary:hover {
 	background: rgba(255, 255, 255, 0.3);
 	transform: translateY(-2px);
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.heroButtons .btnSecondary {
+.hero-buttons .btn-secondary {
 	background: transparent;
 	border: 2px solid rgba(255, 255, 255, 0.5);
 	color: white;
 }
 
-.heroButtons .btnSecondary:hover {
+.hero-buttons .btn-secondary:hover {
 	background: rgba(255, 255, 255, 0.1);
 	border-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Hero Visual */
-.heroVisual {
+.hero-visual {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 }
 
-.heroImage {
+.hero-image {
 	position: relative;
 	width: 300px;
 	height: 300px;
 }
 
-.imagePlaceholder {
+.image-placeholder {
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(
@@ -173,7 +173,7 @@
 	overflow: hidden;
 }
 
-.imagePlaceholder::before {
+.image-placeholder::before {
 	content: "";
 	position: absolute;
 	top: -50%;
@@ -198,7 +198,7 @@
 	}
 }
 
-.codeIcon {
+.code-icon {
 	font-size: 4rem;
 	font-weight: bold;
 	color: #ffd89b;
@@ -206,7 +206,7 @@
 }
 
 /* Floating Elements */
-.floatingElements {
+.floating-elements {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -215,7 +215,7 @@
 	pointer-events: none;
 }
 
-.floatingElement {
+.floating-element {
 	position: absolute;
 	background: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(5px);
@@ -228,19 +228,19 @@
 	animation: float 6s ease-in-out infinite;
 }
 
-.floatingElement.react {
+.floating-element.react {
 	top: 20%;
 	right: -20%;
 	animation-delay: 0s;
 }
 
-.floatingElement.ts {
+.floating-element.ts {
 	bottom: 30%;
 	left: -25%;
 	animation-delay: 2s;
 }
 
-.floatingElement.node {
+.floating-element.node {
 	top: 60%;
 	right: -15%;
 	animation-delay: 4s;
@@ -263,7 +263,7 @@
 }
 
 /* Scroll Indicator */
-.heroScrollIndicator {
+.hero-scroll-indicator {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -273,7 +273,7 @@
 	font-weight: 500;
 }
 
-.scrollArrow {
+.scroll-arrow {
 	width: 24px;
 	height: 40px;
 	border: 2px solid rgba(255, 255, 255, 0.5);
@@ -281,7 +281,7 @@
 	position: relative;
 }
 
-.arrowDown {
+.arrow-down {
 	position: absolute;
 	top: 8px;
 	left: 50%;
@@ -306,22 +306,22 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-	.heroContent {
+	.hero-content {
 		grid-template-columns: 1fr;
 		text-align: center;
 		gap: var(--spacing-2xl);
 	}
 
-	.heroVisual {
+	.hero-visual {
 		order: -1;
 	}
 
-	.heroImage {
+	.hero-image {
 		width: 250px;
 		height: 250px;
 	}
 
-	.floatingElement {
+	.floating-element {
 		display: none;
 	}
 }
@@ -331,43 +331,43 @@
 		min-height: 90vh;
 	}
 
-	.heroName {
+	.hero-name {
 		font-size: 2.5rem;
 	}
 
-	.heroTitle {
+	.hero-title {
 		font-size: 1.5rem;
 	}
 
-	.heroDescription {
+	.hero-description {
 		font-size: 1.1rem;
 	}
 
-	.heroButtons {
+	.hero-buttons {
 		justify-content: center;
 	}
 
-	.heroButtons .btn {
+	.hero-buttons .btn {
 		font-size: 1rem;
 		padding: var(--spacing-sm) var(--spacing-lg);
 	}
 
-	.heroImage {
+	.hero-image {
 		width: 200px;
 		height: 200px;
 	}
 
-	.codeIcon {
+	.code-icon {
 		font-size: 3rem;
 	}
 }
 
 @media (max-width: 480px) {
-	.heroButtons {
+	.hero-buttons {
 		flex-direction: column;
 	}
 
-	.heroButtons .btn {
+	.hero-buttons .btn {
 		width: 100%;
 	}
 }

@@ -1,7 +1,7 @@
 // src/components/Hero/Hero.tsx
 import React, { useState, useEffect } from "react";
 import { personalInfo } from "../data/portfolioData";
-import styles from "./hero.module.css";
+import "./hero.css";
 
 const Hero: React.FC = () => {
 	const [currentTypeText, setCurrentTypeText] = useState("");
@@ -60,32 +60,31 @@ const Hero: React.FC = () => {
 	};
 
 	return (
-		<section className={styles.hero}>
-			<div className={styles.heroContainer}>
-				<div className={styles.heroContent}>
-					<div className={styles.heroText}>
-						<h1 className={`${styles.heroName} fade-in-up`}>
-							Hi, I'm{" "}
-							<span className={styles.textGradient}>{personalInfo.name}</span>
+		<section className="hero">
+			<div className="hero-container">
+				<div className="hero-content">
+					<div className="hero-text">
+						<h1 className="hero-name fade-in-up">
+							Hi, I'm <span className="text-gradient">{personalInfo.name}</span>
 						</h1>
 						<div
-							className={`${styles.heroTitle} fade-in-up`}
+							className="hero-title fade-in-up"
 							style={{ animationDelay: "0.2s" }}
 						>
 							<span>I'm a </span>
-							<span className={styles.typewriter}>
+							<span className="typewriter">
 								{currentTypeText}
-								<span className={styles.cursor}>|</span>
+								<span className="cursor">|</span>
 							</span>
 						</div>
 						<p
-							className={`${styles.heroDescription} fade-in-up`}
+							className="hero-description fade-in-up"
 							style={{ animationDelay: "0.4s" }}
 						>
 							{personalInfo.bio}
 						</p>
 						<div
-							className={`${styles.heroButtons} fade-in-up`}
+							className="hero-buttons fade-in-up"
 							style={{ animationDelay: "0.6s" }}
 						>
 							<button className="btn btn-primary" onClick={scrollToContact}>
@@ -97,30 +96,30 @@ const Hero: React.FC = () => {
 						</div>
 					</div>
 					<div
-						className={`${styles.heroVisual} fade-in-up`}
+						className="hero-visual fade-in-up"
 						style={{ animationDelay: "0.8s" }}
 					>
-						<div className={styles.heroImage}>
-							<div className={styles.imagePlaceholder}>
-								<div className={styles.codeIcon}>
+						<div className="hero-image">
+							<div className="image-placeholder">
+								<div className="code-icon">
 									<span>&lt;/&gt;</span>
 								</div>
 							</div>
-							<div className={styles.floatingElements}>
+							<div className="floating-elements">
 								<div
-									className={`${styles.floatingElement} react`}
+									className="floating-element react"
 									style={{ animationDelay: "0s" }}
 								>
 									React
 								</div>
 								<div
-									className={`${styles.floatingElement} ts"`}
+									className="floating-element ts"
 									style={{ animationDelay: "1s" }}
 								>
 									TypeScript
 								</div>
 								<div
-									className={`${styles.floatingElement} node`}
+									className="floating-element node"
 									style={{ animationDelay: "2s" }}
 								>
 									Node.js
@@ -129,9 +128,9 @@ const Hero: React.FC = () => {
 						</div>
 					</div>
 				</div>
-				<div className={styles.heroScrollIndicator}>
-					<div className={styles.scrollArrow}>
-						<div className={styles.arrowDown}></div>
+				<div className="hero-scroll-indicator">
+					<div className="scroll-arrow">
+						<div className="arrow-down"></div>
 					</div>
 					<span>Scroll Down</span>
 				</div>

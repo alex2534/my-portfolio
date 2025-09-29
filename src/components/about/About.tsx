@@ -8,8 +8,8 @@ export default function About() {
 				solutions to solve real-world problems.
 			</p>
 			<p>
-				When I'm not coding, I enjoy hiking, photography, and exploring new
-				technologies.
+				When I'm not coding, I enjoy hiking, playing video games, and exploring
+				new technologies.
 			</p>
 		</section>
 	);
