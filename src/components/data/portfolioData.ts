@@ -62,55 +62,56 @@ export const personalInfo: PersonalInfo = {
 export const projects: Project[] = [
 	{
 		id: 1,
-		title: "E-commerce Platform",
-		description: "Full-featured e-commerce platform with admin dashboard",
+		title: "Cadastro de Cliente/Paciente",
+		description: "Full-featured cadastro de cliente/paciente com validações",
 		longDescription:
-			"A comprehensive e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, payment integration, and admin dashboard with analytics.",
-		technologies: ["React", "Node.js", "MongoDB", "Stripe", "TypeScript"],
-		image: "/projects/ecommerce.jpg",
-		demoUrl: "https://ecommerce-demo.com",
-		githubUrl: "https://github.com/yourusername/ecommerce",
+			"A comprehensive cadastro system for clients/patients with robust validation and user-friendly interface. Built with React, Node.js, and MongoDB. Features include form validations, data persistence, and responsive design.",
+		technologies: ["React", "vite", "TypeScript", "css module"],
+		image:
+			"public/medica-centro-de-recuperacao-covid-segurando-as-maos-de-uma-paciente-mais-velha.jpg",
+		demoUrl: "https://cadastro-de-cliente-paciente.vercel.app/",
+		githubUrl: "https://github.com/alex2534/cadastro-de-cliente-paciente",
 		featured: true,
 		category: "web",
 	},
-	{
-		id: 2,
-		title: "Task Management App",
-		description: "Collaborative task management with real-time updates",
-		longDescription:
-			"A modern task management application with real-time collaboration features. Built with React, Socket.io, and Firebase. Includes drag-and-drop functionality, team collaboration, and progress tracking.",
-		technologies: ["React", "Firebase", "Socket.io", "Tailwind CSS"],
-		image: "/projects/taskapp.jpg",
-		demoUrl: "https://taskapp-demo.com",
-		githubUrl: "https://github.com/yourusername/taskapp",
-		featured: true,
-		category: "web",
-	},
-	{
-		id: 3,
-		title: "Weather Dashboard",
-		description: "Interactive weather dashboard with forecasts",
-		longDescription:
-			"A beautiful weather dashboard that provides current weather conditions and forecasts. Features location search, interactive maps, and detailed weather metrics with responsive design.",
-		technologies: ["Vue.js", "OpenWeather API", "Chart.js", "SCSS"],
-		image: "/projects/weather.jpg",
-		demoUrl: "https://weather-demo.com",
-		githubUrl: "https://github.com/yourusername/weather",
-		featured: false,
-		category: "web",
-	},
-	{
-		id: 4,
-		title: "Mobile Fitness Tracker",
-		description: "React Native app for fitness tracking",
-		longDescription:
-			"A comprehensive fitness tracking mobile application built with React Native. Includes workout planning, progress tracking, nutrition logging, and social features for sharing achievements.",
-		technologies: ["React Native", "Expo", "Firebase", "Redux"],
-		image: "/projects/fitness.jpg",
-		githubUrl: "https://github.com/yourusername/fitness-tracker",
-		featured: true,
-		category: "mobile",
-	},
+	// {
+	// 	id: 2,
+	// 	title: "Task Management App",
+	// 	description: "Collaborative task management with real-time updates",
+	// 	longDescription:
+	// 		"A modern task management application with real-time collaboration features. Built with React, Socket.io, and Firebase. Includes drag-and-drop functionality, team collaboration, and progress tracking.",
+	// 	technologies: ["React", "Firebase", "Socket.io", "Tailwind CSS"],
+	// 	image: "/projects/taskapp.jpg",
+	// 	demoUrl: "https://taskapp-demo.com",
+	// 	githubUrl: "https://github.com/yourusername/taskapp",
+	// 	featured: true,
+	// 	category: "web",
+	// },
+	// {
+	// 	id: 3,
+	// 	title: "Weather Dashboard",
+	// 	description: "Interactive weather dashboard with forecasts",
+	// 	longDescription:
+	// 		"A beautiful weather dashboard that provides current weather conditions and forecasts. Features location search, interactive maps, and detailed weather metrics with responsive design.",
+	// 	technologies: ["Vue.js", "OpenWeather API", "Chart.js", "SCSS"],
+	// 	image: "/projects/weather.jpg",
+	// 	demoUrl: "https://weather-demo.com",
+	// 	githubUrl: "https://github.com/yourusername/weather",
+	// 	featured: false,
+	// 	category: "web",
+	// },
+	// {
+	// 	id: 4,
+	// 	title: "Mobile Fitness Tracker",
+	// 	description: "React Native app for fitness tracking",
+	// 	longDescription:
+	// 		"A comprehensive fitness tracking mobile application built with React Native. Includes workout planning, progress tracking, nutrition logging, and social features for sharing achievements.",
+	// 	technologies: ["React Native", "Expo", "Firebase", "Redux"],
+	// 	image: "/projects/fitness.jpg",
+	// 	githubUrl: "https://github.com/yourusername/fitness-tracker",
+	// 	featured: true,
+	// 	category: "mobile",
+	// },
 ];
 
 export const skills: Skill[] = [
@@ -145,7 +146,7 @@ export const skills: Skill[] = [
 export const experiences: Experience[] = [
 	{
 		id: 1,
-		title: "Junior Frontend Developer",
+		title: "Frontend Developer",
 		company: "CBCO .",
 		duration: "2022 - Present",
 		description: [
