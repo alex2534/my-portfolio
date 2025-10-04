@@ -8,16 +8,12 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import "./App.css";
-import UnderConstruction from "./components/underConstruction/UnderConstruction";
 
 const App: React.FC = () => {
 	return (
 		<Router>
 			<div className="App">
 				<Navbar />
-				{/* <div>
-					<UnderConstruction />
-				</div> */}
 				<main>
 					<section id="home">
 						<Hero />
