@@ -68,7 +68,7 @@ export const projects: Project[] = [
 			"A comprehensive cadastro system for clients/patients with robust validation and user-friendly interface. Built with React, Node.js, and MongoDB. Features include form validations, data persistence, and responsive design.",
 		technologies: ["React", "vite", "TypeScript", "css module"],
 		image:
-			"/src/assets/medica-centro-de-recuperacao-covid-segurando-as-maos-de-uma-paciente-mais-velha.jpg",
+			"https://www.shutterstock.com/image-photo/buyer-signing-vehicle-registration-papers-600nw-2640238187.jpg",
 		demoUrl: "https://cadastro-de-cliente-paciente.vercel.app/",
 		githubUrl: "https://github.com/alex2534/cadastro-de-cliente-paciente",
 		featured: true,
