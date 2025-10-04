@@ -48,11 +48,11 @@ const Footer: React.FC = () => {
 			url: personalInfo.socialLinks.linkedin,
 			icon: "💼",
 		},
-		{
-			name: "Twitter",
-			url: personalInfo.socialLinks.twitter || "#",
-			icon: "🐦",
-		},
+		// {
+		// 	name: "Twitter",
+		// 	url: personalInfo.socialLinks.twitter || "#",
+		// 	icon: "🐦",
+		// },
 	];
 
 	return (
@@ -131,7 +131,7 @@ const Footer: React.FC = () => {
 						<div className="footer-section">
 							<h4>Resources</h4>
 							<ul className="footer-links">
-								<li>
+								{/* <li>
 									<a
 										href={personalInfo.resume}
 										className="footer-link"
@@ -139,7 +139,7 @@ const Footer: React.FC = () => {
 									>
 										Resume
 									</a>
-								</li>
+								</li> */}
 								<li>
 									<a
 										href={personalInfo.socialLinks.github}
