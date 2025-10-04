@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { personalInfo } from "../data/portfolioData";
-import "./Footer.css";
+import "./footer.css";
 
 const Footer: React.FC = () => {
 	const [showBackToTop, setShowBackToTop] = useState(false);
